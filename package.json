@@ -1,0 +1,41 @@
+{
+  "name": "react-express-template",
+  "version": "1.0.0",
+  "description": "A template for a react/express project",
+  "main": "index.js",
+  "scripts": {
+    "watch": "parcel watch src/index.html --out-file index.html -d build/ --public-url /app",
+    "dist": "npm run copyfiles && set NODE_ENV = 'production' && parcel build src/index.html --public-url /app -d dist/static --no-source-maps",
+    "copyfiles": "rm -rf dist/* && cp -r package.json src/servers dist",
+    "sass": "node-sass res/admin.scss res/admin.css && node-sass res/user.scss res/user.css && node-sass res/landing.scss res/landing.css",
+    "start": "pm2 start servers/accounts/accounts.js && pm2 start servers/analytics/analytics.js && pm2 start servers/scans/scans.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": [2, {"code": 120}],
+    "no-trailing-spaces": 2,
+    "no-multi-spaces": 2,
+    "quotes": [2, "double", {"avoidEscape": true}],
+    "semi": [2, "always"],
+    "camelcase": [2, {"properties": "always"}],
+    "prefer-const": 2,
+    "key-spacing": 2,
+    "jsx-quotes":  [2, "prefer-double"],
+    "arrow-parens": [2],
+    "arrow-spacing": 2,
+    "object-shorthand": 2,
+    "object-curly-spacing": 2,
+    "template-curly-spacing": 2,
+    "space-in-parens": 2,
+    "prefer-template": 2,
+    "react/jsx-filename-extension": 0,
+    "react/prop-types": 0,
+    "react/jsx-curly-spacing": 2,
+    "react/jsx-tag-spacing": [2, {
+      "closingSlash": "never",
+      "beforeSelfClosing": "never",
+      "afterOpening": "never",
+      "beforeClosing": "never"
+    }],
+    "react/jsx-props-no-multi-spaces": 2,
+    "react/jsx-curly-brace-presence": 2,
+    "react/jsx-indent-props": [2, "first"],
+    "react/jsx-boolean-value": 2
+  }
+}

@@ -1,9 +1,11 @@
 import React, {useState} from "react";
+import ReactDOM from "react-dom";
 
-export default function App() {
+function App() {
     const [] = useState();
 
     return (
         null
     );
 }
+ReactDOM.render(<App/>, document.getElementById("app"))

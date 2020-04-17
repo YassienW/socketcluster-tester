@@ -1,11 +1,9 @@
-import {hot} from "react-hot-loader";
 import React, {useState} from "react";
 
-function App() {
+export default function App() {
     const [] = useState();
 
     return (
         null
     );
 }
-export default hot(module)(App);

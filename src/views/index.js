@@ -1,10 +1,9 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import App from "./App";
-import {startMirage} from "../mock/Mirage";
 
-if (process.env.NODE_ENV === "development"){
-    startMirage();
+if (process.env.NODE_ENV !== "production"){
+    require("../mock/Mirage").startMirage();
 }
 
 ReactDOM.render(<App/>, document.getElementById("app"));

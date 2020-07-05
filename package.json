@@ -23,7 +23,9 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "socketcluster-client": "^16.0.1",
+    "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",

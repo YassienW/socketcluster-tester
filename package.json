@@ -4,7 +4,7 @@
   "description": "A template for a react project",
   "main": "index.js",
   "scripts": {
-    "parcel": "parcel src/index.html -d build/",
+    "parcel": "parcel src/index.html --dist-dir build",
     "watch": "parcel watch src/index.html --out-file index.html -d build/",
     "dist": "npm run copyfiles && set NODE_ENV = 'production' && parcel build src/index.html -d dist/static --no-source-maps",
     "copyfiles": "rm -rf dist/* && cp -r package.json src/servers dist"
@@ -35,8 +35,9 @@
     "eslint": "^7.4.0",
     "eslint-plugin-react": "^7.20.3",
     "miragejs": "^0.1.40",
-    "parcel-bundler": "^1.12.4",
-    "react-hot-loader": "^4.12.21"
+    "parcel": "^2.0.0-beta.1",
+    "react-hot-loader": "^4.12.21",
+    "sass": "^1.26.9"
   },
   "alias": {
     "react-dom": "@hot-loader/react-dom"

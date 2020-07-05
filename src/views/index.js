@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 import React from "react";
 import {hot} from "react-hot-loader";
 import App from "./App";
-import "../../res/style.scss";
+import "../../res/style.css";
 
 if (process.env.NODE_ENV !== "production"){
     require("../mock/Mirage").startMirage();

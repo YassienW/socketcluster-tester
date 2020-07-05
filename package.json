@@ -1,7 +1,7 @@
 {
-  "name": "react-parcel-template",
+  "name": "socketcluster-tester",
   "version": "1.0.0",
-  "description": "A template for a react project",
+  "description": "A testing tool for socketcluster",
   "main": "index.js",
   "scripts": {
     "parcel": "parcel src/index.html --dist-dir build",

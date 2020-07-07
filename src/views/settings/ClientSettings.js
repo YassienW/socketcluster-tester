@@ -6,7 +6,7 @@ export default function ClientSettings({settings, setSettings}){
     return (
         <form className="space-y-3">
             <p className="text-lg">Client settings</p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 items-center">
                 <Input value={settings.hostname} placeholder="Hostname"
                        onChange={(e) => setSettings({hostname: e.target.value})}/>
                 <Input value={settings.port} placeholder="Port" onChange={(e) => setSettings({port: e.target.value})}/>

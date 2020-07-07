@@ -7,7 +7,7 @@ import Button from "./common/Button";
 import Logs from "./Logs";
 import Messages from "./messages/Messages";
 
-const loadedSettings = JSON.parse(localStorage.getItem("scClientSettings")) || {secure: false};
+const loadedSettings = JSON.parse(localStorage.getItem("scClientSettings")) || {secure: false, hostname: "localhost"};
 
 export default function App(){
     const [clients, setClients] = useState([]);

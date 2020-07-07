@@ -21,7 +21,7 @@ export default function RPCs(){
 
     return (
         <>
-            <div className="flex items-center whitespace-no-wrap space-x-4">
+            <div className="flex items-center space-x-4">
                 <Input placeholder="RPC" value={call} onChange={(e) => setCall(e.target.value)}/>
                 <Input placeholder="RPC Data" value={data} onChange={(e) => setData(e.target.value)}/>
                 <Button onClick={sendRPC}>Send RPC</Button>

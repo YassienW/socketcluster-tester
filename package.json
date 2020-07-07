@@ -6,8 +6,7 @@
   "scripts": {
     "parcel": "parcel src/index.html --dist-dir build",
     "watch": "parcel watch src/index.html --out-file index.html -d build/",
-    "dist": "npm run copyfiles && set NODE_ENV = 'production' && parcel build src/index.html -d dist/static --no-source-maps",
-    "copyfiles": "rm -rf dist/* && cp -r package.json src/servers dist"
+    "dist": "parcel build src/index.html --no-source-maps"
   },
   "babel": {
     "presets": [
